@@ -1171,3 +1171,249 @@ header {
     .gallery-grid { grid-template-columns: 1fr; }
     .contact-form-wrap { padding: 25px 20px; }
 }
+
+
+/* =========================================
+   CHURCH HISTORY SECTION
+========================================= */
+.history-section {
+    background: var(--bg-mid);
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.history-section h2 {
+    color: var(--gold);
+    font-size: 44px;
+    margin-bottom: 60px;
+}
+
+.history-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+}
+
+.history-card {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px 36px;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.history-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--gold), #ffb700);
+    border-radius: 4px 0 0 4px;
+}
+
+.history-card:hover {
+    border-color: var(--border-hover);
+    box-shadow: 0 20px 50px var(--gold-glow);
+    transform: translateX(6px);
+}
+
+.history-icon {
+    font-size: 38px;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.history-body h3 {
+    color: var(--gold);
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-family: 'Cinzel', serif;
+}
+
+.history-body p {
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* =========================================
+   CHURCH GROUPS SECTION
+========================================= */
+.groups-section {
+    background: var(--bg-dark);
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.groups-section h2 {
+    color: var(--gold);
+    font-size: 44px;
+    margin-bottom: 60px;
+}
+
+.groups-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.group-category {
+    text-align: left;
+}
+
+.group-cat-title {
+    color: var(--gold);
+    font-size: 20px;
+    margin-bottom: 24px;
+    font-family: 'Cinzel', serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 14px;
+}
+
+.group-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.group-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: var(--transition);
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.group-card i {
+    color: var(--gold);
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.group-card:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px var(--gold-glow);
+    color: #fff;
+}
+
+/* =========================================
+   PAST PARISH PRIESTS
+========================================= */
+.past-priests {
+    background: var(--bg-mid);
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.past-priests h2 {
+    color: var(--gold);
+    font-size: 44px;
+    margin-bottom: 60px;
+}
+
+.priests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.priest-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 40px 30px;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.priest-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.priest-card:hover {
+    border-color: var(--border-hover);
+    box-shadow: 0 20px 50px var(--gold-glow);
+    transform: translateY(-8px);
+}
+
+.featured-priest {
+    border-color: rgba(255,215,0,0.3);
+    background: linear-gradient(135deg, var(--bg-card), rgba(255,215,0,0.05));
+}
+
+.priest-card-icon {
+    width: 70px; height: 70px;
+    border-radius: 50%;
+    background: rgba(255,215,0,0.12);
+    border: 2px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-size: 28px;
+    margin: 0 auto 20px;
+}
+
+.priest-card h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Cinzel', serif;
+}
+
+.priest-year {
+    display: inline-block;
+    background: rgba(255,215,0,0.15);
+    color: var(--gold);
+    border: 1px solid rgba(255,215,0,0.3);
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.priest-role {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+    .history-card { flex-direction: column; gap: 12px; }
+    .history-card::before { width: 100%; height: 4px; top: 0; bottom: auto; left: 0; right: 0; border-radius: 4px 4px 0 0; }
+    .group-grid { grid-template-columns: repeat(2, 1fr); }
+    .priests-grid { grid-template-columns: 1fr; }
+    .history-section h2, .groups-section h2, .past-priests h2 { font-size: 32px; }
+}
+
+@media (max-width: 480px) {
+    .group-grid { grid-template-columns: 1fr; }
+}
